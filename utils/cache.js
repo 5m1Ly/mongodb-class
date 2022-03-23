@@ -1,4 +1,4 @@
-class DataCacher {
+export class DataCacher {
 
 	constructor() {
 
@@ -56,7 +56,7 @@ class DataCacher {
 	}
 
 	// gets cached data
-	get = (catagory, index, callback) => {
+	get = async (catagory, index, callback) => {
 
 		try {
 
@@ -83,6 +83,7 @@ class DataCacher {
 // create a new instance of the class here to globaly cache data
 const Cache = new DataCacher();
 export default Cache;
+
 
 /*
 	// if you dont want to globaly cache data export the class instead
